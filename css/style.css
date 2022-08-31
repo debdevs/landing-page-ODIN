@@ -5,6 +5,41 @@
 *{
     box-sizing: border-box;
 }
+picture {
+    display: block;
+}
+
+img{
+    display:block;
+    width: 100%;
+    height: auto;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+p a, li a {
+    color: blue;
+    text-decoration: none;
+    display: inline-block;
+}
+
+
+/* settings */
+
+html {
+
+    --black: #333;
+    --color: magenta;
+    --white: #efefef;
+    --light: #1fa3fc;
+
+
+}
+/*dev styles  */
+
 
 
 /* structure */
@@ -14,6 +49,7 @@ body{
     flex-direction: column;
     border: 10px solid blue;
     min-height: 100vh;
+    margin: 0 auto;
 }
 
 main{
@@ -26,9 +62,13 @@ main{
     display: block;
     border: 4px solid orange;
     padding: 10px;
+    width: 98%;
+    max-width: 75%;
+    margin-right: auto;
+    margin-left: auto;
 }
 
-header, footer {
+header, footer, main {
     border: 4px solid red;
         
     }
@@ -37,3 +77,87 @@ header, footer {
      border: 4px solid lime;
     
     }
+
+
+
+
+    /* Typography */
+
+    .loud-voice {
+        font-size: 40px;
+        font-weight: 700px;
+        line-height: 1.1;
+    }
+
+    .calm-voice {
+        font-size: 1rem;
+        line-height: 1.3;
+        font-family: sans-serif;
+    }
+    /*COMPONENTS  */
+
+    .button {
+        display: inline-block;
+        background-color: var(--color);
+        color: white;
+        font-size: 1.2rem;
+        padding: 0.6em 1em;
+        font-family: sans-serif;
+    }
+
+    /* MOdules */
+
+    graphic-diptych {
+        display: block;
+        display: flex;
+        flex-direction:column;
+        gap: 20px;
+    }
+
+
+    graphic-diptych text-content {
+       
+        margin-top: 10px;
+    }
+
+    graphic-diptych text-content .button{
+       
+        margin-top: 10px;
+    }
+
+
+    graphic-diptych text-content p{
+      
+        margin-top: 10px;
+    }
+
+    graphic-diptych picture {
+        display: block;
+    }
+
+@media (min-width: 700px) {
+
+    graphic-diptych{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        
+    }
+
+    graphic-diptych :is(text-content, picture){
+        flex-basis: 50%;
+        border: 2px solid red;
+    }
+    /* graphic-diptych text-content, picture{} */
+
+
+
+}
+
+
+
+.welcome {
+
+    background-color: var(--black);
+    color: var(--white)
+}

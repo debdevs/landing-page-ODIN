@@ -288,8 +288,8 @@ cta-container
     max-width: 1100px;
     margin-right: auto;
     margin-left: auto;
-    padding-top: 5vh;
-    padding-bottom:5vh;
+    padding-top: 2vh;
+    padding-bottom:2vh;
     background: var(--button-color);
     border-radius: 12px;
     
@@ -308,7 +308,8 @@ cta-container left-items
     align-items: center;
     margin-right: 15%;
     margin-left: 15%;
-    color: var(--hero-texts-color)
+    color: var(--hero-texts-color);
+ 
 }
 
 cta-container left-items h1
@@ -316,6 +317,7 @@ cta-container left-items h1
     
 margin-left: 0px;
 padding:0%;
+height: 12px;
 }
 
 
@@ -341,4 +343,23 @@ border: 2px solid var(--hero-texts-color);
 padding:5px;
 width: 75px;
 border-radius: 12px;
+}
+
+
+
+footer  {
+  
+    background: var(--dark-background-color);
+
+
+}
+
+footer .inner-column {
+    display: flex;
+    background: var(--dark-background-color);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+
 }

@@ -42,7 +42,16 @@ html {
 }
 /*dev styles  */
 
+:root{
+    --dark-background-color: #1f2937;
+    --hero-texts-color: #f9faf8;
+    --button-color: #3882f6;
+    --dark-text: #1f2937;
+    --quote-background-color:#e5e7eb;
+    
 
+
+}
 
 /* structure */
 
@@ -195,4 +204,9 @@ products-grid .product-list {
 
 product-card{
     display: block;
+}
+
+product-card img{
+    border: 2px solid var(--button-color);
+    border-radius: 12px;
 }

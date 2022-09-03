@@ -66,7 +66,7 @@ html {
 body{
     display: flex;
     flex-direction: column;
-    border: 10px solid blue;
+    border: 0px solid blue;
     min-height: 100vh;
     margin: 0 auto;
 }
@@ -181,9 +181,39 @@ header, footer, main {
 
 
 
+header{
+    display: flex;
+    background-color: var(--dark-background-color);
+    color: white;
+    
+
+}
+
+header .inner-column{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--dark-background-color);
+    color: white;
+    
+
+}
+
+
+header .inner-column right-items ul{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    color: white;
+    
+
+}
+
+
+
 .welcome {
 
-    background-color: var(--black);
+    background-color: var(--dark-background-color);
     color: var(--white)
 }
 
@@ -191,12 +221,57 @@ header, footer, main {
 .welcome .button {
 
     background-color: var(--light);
-    color: var(--white)
+    color: var(--white);
 }
 
 .about {
     background-color: var(--quote-background-color);
 }
+
+
+.welcome .inner-column graphic-diptych text-content {
+    display: flex;
+    flex-direction: column;
+    color: var(--hero-texts-color);
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.welcome .inner-column graphic-diptych text-content h1 {
+font-size: 48px;
+width: 258px;
+font-weight: 900;
+height: 35px;
+}
+
+
+.welcome .inner-column graphic-diptych text-content p{
+    display: flex;
+    flex-direction: column;
+    color: var(--hero-texts-color);
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+    margin-top:80px;
+}
+
+.welcome .inner-column graphic-diptych text-content button{
+
+    color: var(--hero-texts-color);
+
+    background: var(--button-color);
+    border-radius: 5px;
+    padding: 15px;
+    border: 0px solid white;
+}
+
+
+
+
+
+
+
 
 products-grid {
 
